@@ -1,0 +1,38 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Typing game</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Typing Speed Game</h1>
+		<p>Type as many words as you can!</p>
+        <div role="group" class="diff-btns" id="allRadio">
+            <input type="radio" name="btnradio" id="easy" value="1" autocomplete="off" checked>
+            <label>Easy</label>
+          
+            <input type="radio" name="btnradio" id="medium" value="2" autocomplete="off">
+            <label>Medium</label>
+          
+            <input type="radio" name="btnradio" id="hard" value="3" autocomplete="off">
+            <label>Hard</label>
+          </div>
+		<button class="start-button">START</button>
+		<div class="outerWrap">
+			<div class="scoreWrap">
+				<p>Score</p>
+				<span class="score">0</span>
+			</div>
+			<div class="timeWrap">
+				<p>Time left</p>
+				<span class="time">60</span>
+			</div>
+		</div>
+		<div class="wordsWrap">
+			<p class="words"></p>
+		</div>
+	</div>
+    <script src="script.js"></script>
+</body>
+</html>
